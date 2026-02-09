@@ -170,7 +170,10 @@ descriptionContainer.append(descriptionParagraph);
 const firstGameContainer = document.getElementById("first-game");
 const secondGameContainer = document.getElementById("second-game");
 
-// use destructuring and the spread operator to grab the first and second games
+// sort the games by pledged amount in descending order
+const sortedGames = [...GAMES_JSON].sort((a, b) => b.pledged - a.pledged);
+
+// use destructuring to grab the top two games
 const [topGame, secondGame] = sortedGames;
 
 // create a new element to hold the name of the top pledged game and append it
