@@ -21,6 +21,14 @@ body {
 
 .stats-container {
     display: flex;
+    align-items:center;
+    padding: 20px;
+    background-color:gainsboro
+}
+
+.stats-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
